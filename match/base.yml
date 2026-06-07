@@ -39,37 +39,49 @@ matches:
           
   # And much more! For more information, visit the docs: https://espanso.org/docs/
 
-  - trigger: "@@1"
+  - trigger: ":@1"
     replace: "①"
-  - trigger: "@@2"
+  - trigger: ":@2"
     replace: "②"
-  - trigger: "@@3"
+  - trigger: ":@3"
     replace: "③"
-  - trigger: "@@4"
+  - trigger: ":@4"
     replace: "④"
-  - trigger: "@@5"
+  - trigger: ":@5"
     replace: "⑤"
-  - trigger: "@@6"
+  - trigger: ":@6"
     replace: "⑥"
-  - trigger: "@@7"
+  - trigger: ":@7"
     replace: "⑦"
-  - trigger: "@@8"
+  - trigger: ":@8"
     replace: "⑧"
-  - trigger: "@@9"
+  - trigger: ":@9"
     replace: "⑨"
-  - trigger: "@@0"
+  - trigger: ":@0"
     replace: "⑩"
   - trigger: ":circle"
     replace: "○"
+  - trigger: ":ooo"
+    replace: "○"
   - trigger: ":fcircle"
+    replace: "●"
+  - trigger: ";ooo"
     replace: "●"
   - trigger: ":box"
     replace: "□"
+  - trigger: ":bbb"
+    replace: "□"
   - trigger: ":fbox"
+    replace: "■"
+  - trigger: ";bbb"
     replace: "■"
   - trigger: ":star"
     replace: "☆"
+  - trigger: ":sss"
+    replace: "☆"
   - trigger: ":fstar"
+    replace: "★"
+  - trigger: ";sss"
     replace: "★"
 
   - trigger: ":수사결과보고"
@@ -256,3 +268,14 @@ matches:
       4. 피의자 주장에 부합하는 증거 
       5. 고소인 주장 또는 피의사실 인정이 부족한 이유 
       6. 결론 
+      
+  - trigger: ":AI수결"
+    replace: |
+      지식 베이스에서 'AI용_수사결과보고서 작성방법 교재.md', 'AI용_수사결과보고서_작성_매뉴얼_v3.2.md'를 참고해서, 수사결과보고서 초안을 작성해줘. 작성하기 전 나에게 물어볼 것이 있으면 물어봐.
+      
+      
+  - trigger: ":AI수결재검토"
+    replace: |
+      지식 베이스에서 'AI용_수사결과보고서 작성방법 교재.md', 'AI용_수사결과보고서_작성_매뉴얼_v3.2.md'를 참고해서, 각 항목별 작성 원칙이 잘 준수되었는지, 수정이 필요한 부분이 있는지 검토해줘.
+      
+      
